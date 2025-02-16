@@ -1,0 +1,1780 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="google" content="notranslate">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate,no-store" />
+    <meta http-equiv="cache-control" content="post-check=0, pre-check=0', FALSE" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title title="போக்குவரத்து மற்றும் சாலை பாதுகாப்பு ஆணையரகம் தமிழ்நாடு அரசு">போக்குவரத்து மற்றும் சாலை பாதுகாப்பு ஆணையரகம், தமிழ்நாடு அரசு</title>
+    
+    <base href="https://tnsta.gov.in/" />
+    <link rel="icon" type="image/png" href="common_img/TamilNadu_Logo.png" />
+    <link href="common_file/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="common/css/style.css" type="text/css">
+    <link rel="stylesheet" href="tnweb/css/responsive.css" />
+    <link rel="stylesheet" href="tnweb/css/style.css" />
+    <link href="slide/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="slide/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
+    <link href="slide/stylesheets/responsive-carousel.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="tab/css/tabs.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.css">
+    <link rel="stylesheet" href="tnweb/css/version_style.css" media="screen">
+    <link rel="stylesheet" href="datatable/css/custom.css">
+    <link rel="stylesheet" href="datatable/css/jquery.dataTables.min.css">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
+    <style>
+        .for-mobile-translate {
+            display: none !important;
+        }
+
+        @media (max-width: 767px) {
+            .for-mobile-translate {
+                display: block !important;
+            }
+
+            .for-desktop-translate {
+                display: none !important;
+            }
+        }
+
+        .flex-wrapper {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        object.pdfView {
+            height: 650px;
+            width: 100%;
+        }
+
+        /* Loader */
+        .loader-wrapper {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #ffffff;
+            z-index: 9999;
+        }
+
+        .loader {
+            display: flex;
+            justify-content: space-between;
+            width: 80px;
+        }
+
+        .loader div {
+            width: 20px;
+            height: 20px;
+            background-color: var(--bs-header-bg);
+            border-radius: 50%;
+            animation: bounce 1.4s infinite ease-in-out both;
+        }
+
+        .loader div:nth-child(1) {
+            animation-delay: -0.32s;
+        }
+
+        .loader div:nth-child(2) {
+            animation-delay: -0.16s;
+        }
+
+        @keyframes bounce {
+
+            0%,
+            80%,
+            100% {
+                transform: scale(0);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+        }
+
+        body.loading .wrap {
+            display: none;
+        }
+    </style>
+    <script src="common/js/bootstrap.min.js" type="text/javascript"></script>
+
+</head>
+
+<body class="loading common-body-bg gd-sldm flex-wrapper tn-style">
+    <!-- Page Wrapper -->
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <div id="wrap " class="layout-1">
+        <!-- Top bar -->
+        <div class="top-bar common-bg-Sherpa-Blue">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-6">
+                        <div class="left-sec" style="text-align: center;">
+                            <ul>
+                                <li><a href="Indexes/screenreaderaccessf" class="btn btn-white font-content" role="button"><i class="fa fa-arrow-down" aria-hidden="true"></i>Screen Reader Access </a></li>
+
+                                <!-- <li><a href="Indexes/screenreaderaccessf" class="btn btn-white font-content" role="button"><i class="fa fa-page" aria-hidden="true">&nbsp; Skip To Main Content</i> </a></li> -->
+                                <li><button type="button" class="btn btn-outline-success"><span class="colorblindness_page colorblindness_color1" id="colorblindness_page1" data-id="1"> </span></button></li>
+                                <li><button type="button" class="btn btn-outline-success"><span class="colorblindness_page colorblindness_color2" id="colorblindness_page2" data-id="2"> </span></button></li>
+                                <li><button type="button" class="btn btn-outline-success"><span class="colorblindness_page colorblindness_color3" id="colorblindness_page3" data-id="3"> </span></button></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <div class="right-sec" style="text-align: center;">
+                            <ul>
+
+                                <li><a class="btn btn-white" role="button" id="increasetext"><i class="fa fa-font" aria-hidden="true">+</i> </a></li>
+                                <li><a class="btn btn-white" role="button" id="resettext"><i class="fa fa-font" aria-hidden="true"></i> </a></li>
+                                <li><a class="btn btn-white" role="button" id="decreasetext"><i class="fa fa-font" aria-hidden="true">-</i> </a></li>
+                                </li>
+
+                                <li><a>
+                                        <select class="translate" id="translate">
+                                            <option value="tn">தமிழ்</option>
+                                            <option value="en">English</option>
+                                        </select>
+                                    </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header -->
+        <header>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="grid grid-space-between">
+                        <div class="logo">
+                            <a title="Commissionerate of Transport and Road Safety ">
+                                <div class="logo-wrapper grid grid-align-center">
+                                    <div class="logo-image">
+                                        <img src="common_img/TamilNadu_Logo.png" alt="State Emblem of India" style="position: relative;">
+                                    </div>
+                                    <div class="logo-text">
+                                        <h2 class="lang font-content" key="top_title"> COMMISSIONERATE OF TRANSPORT AND ROAD SAFETY</h2>
+                                        <h3 class="lang font-content" key="top_sub_title"> Government of Tamil Nadu</h3>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- end of header logo-->
+                        <!-- start of minister slider -->
+                        <div class="top-minister top-minister-desktop grid grid-align-center">
+                            <div class="minister-wrapper grid grid-align-center">
+                                <div class="grid grid-align-center">
+
+                                                                            <div class="minister-image">
+                                            <a href="UserController/adminlogin" title="Login"> <img class="admin-img" src="common_img/login.jpg" alt="Login"></a>
+                                        </div>
+                                                                    </div>
+                            </div>
+                        </div>
+                        <div class="logo-right-mobile grid grid-align-center">
+                            <div class="grid grid-align-center">
+                                                                    <div class="minister-image">
+                                        <a href="UserController/adminlogin" title="Login"> <img class="admin-img" src="common_img/login.jpg" alt="Login"></a>
+                                    </div>
+                                                            </div>
+                        </div>
+                        <div class="mobile-menu">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of top minister -->
+    </div><style>
+    .formdd {
+        display: none;
+    }
+
+    @media (max-width: 1024px) {
+        .desktop {
+            display: none;
+        }
+
+        #form1 {
+            display: block !important;
+        }
+
+        .sina-nav .navbar-toggle.moremenu-mobile {
+            width: 138px !important;
+        }
+
+        .mobile-respone {
+            display: none;
+        }
+
+        .mobile-respone2 {
+            display: none;
+        }
+    }
+</style>
+<link rel="stylesheet" href="menu/assets/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="menu/assets/css/sina-nav.css">
+<nav class="sina-nav common-bg-Sherpa-Blue mobile-sidebar navbar-fixed" data-top="0">
+    <div class="container">
+        <div class="sina-nav-header">
+            <button type="button" class="navbar-toggle mobile-respone" data-toggle="collapse" data-target="#navbar-menu">
+                <i class="fa fa-bars"> &nbsp; &nbsp;</i>Menu
+            </button>
+            <div class="desktop" style="float: right;">
+                <ul class="sina-menu sina-menu-right" data-in="fadeInLeft" data-out="fadeInOut">
+                    <li>
+                        <a id="formButton" class="page_url_act" data-id='0' style="cursor: pointer;"><i class="fa fa-bars" style="line-height: 0;"></i> <span class="lang" key="view_more_btn">View More</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="sina-menu sina-menu-left" data-in="fadeInLeft" data-out="fadeInOut">
+                <li > 
+                    <a class='nav-link' href='Indexes'> முகப்பு </a>
+                         </li><li class='dropdown'> 
+                  <a class='dropdown-toggle' data-toggle='dropdown' href='Indexes'>எங்களைப் பற்றி</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li > 
+                    <a class='nav-link' href='Indexes/page/ucY3VH8aDKANFQ=='> தொலைநோக்கு   குறிக்கோள் </a>
+                         </li><li class='dropdown'> 
+                  <a class='dropdown-toggle' data-toggle='dropdown' href='#'>யார் யார் வகிக்கும் பதவி</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li > 
+                    <a class='nav-link' href='Indexes/about_home_secretary'> உள்(போக்குவரத்து) செயலர் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/about_transport_commissioner'> போக்குவரத்து மற்றும் சாலைப் பாதுகாப்பு ஆணையர் </a>
+                         </li></ul></li><li > 
+                    <a target='_blank' class='nav-link' href='upload/mt_10LsiRMA_2023_07_10.pdf'> நிருவாக அமைப்பு விளக்கப்படம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/page/vMY3VFMoLrcoKA=='> போக்குவரத்துத்துறையின் பணிகள் </a>
+                         </li><li > 
+                    <a target='_blank' class='nav-link' href='upload/mt_2xTsqVc_2023_03_29.pdf'> தகவல் அறியும் உரிமை சட்டம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/page/usY3VEApFq0oIg=='> விருதுகள் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/about_role_honor'> போக்குவரத்து ஆணையர்களின் பட்டியல் </a>
+                         </li><li > 
+                    <a target='_blank' class='nav-link' href='upload/mt_7gHHUOx_2024_06_27.pdf'> கொள்கை விளக்கக் குறிப்பு </a>
+                         </li></ul></li><li class='dropdown'> 
+                  <a class='dropdown-toggle' data-toggle='dropdown' href='Indexes'>சேவைகள்</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li > 
+                    <a class='nav-link' href='Indexes/service_licenseservices'> ஓட்டுநர் உரிமம் சேவைகள் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/service_vehicleservice'> வாகனம் சம்பந்தமான சேவைகள் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/service_vehicle_permit'> அனுமதிச்சீட்டு சேவைகள் </a>
+                         </li><li > 
+                        <a class='nav-link' target='_blank' onclick='preventProp(event)' href='https://vahan.parivahan.gov.in/sldmaker/vahan/welcome.xhtml'> வேகக் கட்டுப்பாட்டுக் கருவி தயாரிப்பாளர் </a>
+                             </li><li class='dropdown'> 
+                  <a class='dropdown-toggle' data-toggle='dropdown' href='Indexes/about-dashboard'>முகப்புப்பெட்டி</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li > 
+                        <a class='nav-link' target='_blank' onclick='preventProp(event)' href='https://vahan.parivahan.gov.in/vahan4dashboard/'> வாகன்4 </a>
+                             </li><li > 
+                        <a class='nav-link' target='_blank' onclick='preventProp(event)' href='https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do'> சாரதி 4 </a>
+                             </li></ul></li><li > 
+                    <a class='nav-link' href='Indexes/service_misc'> பல்வகை </a>
+                         </li><li > 
+                        <a class='nav-link' target='_blank' onclick='preventProp(event)' href='https://vahan.parivahan.gov.in/puc/'> மாசுக் கட்டுப்பாட்டு சான்றிதழ் </a>
+                             </li><li > 
+                    <a class='nav-link' href='https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml?statecd=Mzc2MzM2MzAzNjY0MzIzODM3NjIzNjY0MzY2MjM3NTQ0ZQ=='> மக்கள் சேவைகள் </a>
+                         </li><li > 
+                        <a class='nav-link' target='_blank' onclick='preventProp(event)' href='https://vahan.parivahan.gov.in/npermit/'> தேசிய அனுமதிச் சீட்டு </a>
+                             </li></ul></li><li > 
+                    <a class='nav-link' href='Indexes/contactless_services'> நேரடி தொடர்பில்லாத சேவைகள் </a>
+                         </li><li class='dropdown'> 
+                  <a class='dropdown-toggle' data-toggle='dropdown' href='Indexes'>அடிக்கடி கேட்கப்படும் கேள்விகள்</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li > 
+                    <a class='nav-link' href='Indexes/faq_learning'> பழகுநர் ஓட்டுநர் உரிமம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/faq_driving'> ஓட்டுநர் உரிமம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/faq_conductor'> நடத்துநர் உரிமம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/faq_fitness'> தகுதிச் சான்றிதழ் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/faq_permit'> அனுமதிச்சீட்டு </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/faq_registration'> வாகனங்களை பதிவு செய்தல் </a>
+                         </li></ul></li><li class='dropdown'> 
+                  <a class='dropdown-toggle' data-toggle='dropdown' href='Indexes'>தொடர்புக்கு</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li > 
+                    <a class='nav-link' href='Indexes/contactus_home'> உள் (போக்குவரத்து) துறை </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/contactus_staoffice'> மாநில போக்குவரத்து ஆணையம் / போக்குவரத்து ஆணையர் அலுவலகம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/contactus_zonaloffice'> மண்டல அலுவலகம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/contactus_rtooffice'> வட்டார போக்குவரத்து அலுவலகம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/contactus_mvioffice'> மோட்டார் வாகன ஆய்வாளர் அலுவலகம் </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/contactus_checkpost'> சோதனைச் சாவடி </a>
+                         </li><li > 
+                    <a class='nav-link' href='Indexes/contactus_staoffice_trans'> மாநில போக்குவரத்து கழகம் / அனைத்து மாநில போக்குவரத்து கழகங்களின் நிர்வாக இயக்குநர்கள் </a>
+                         </li></ul></li>            </ul>
+        </div>
+    </div>
+</nav>
+<nav class="formdd sina-nav common-bg-header-cyan-blue mobile-sidebar " data-top="0" id="form1">
+    <div class="container">
+
+        <div class="sina-nav-header">
+            <div style=" float: right;
+    position: relative;
+    top: -23px;
+    z-index: 9999;">
+                <button type="button" class="navbar-toggle moremenu-mobile mobile-respone2 page_url_act" data-id='0' data-toggle="collapse" data-target="#navbar-menu2">
+                    <i class="fa fa-bars">&nbsp; &nbsp;</i><span class="lang" key="view_more_btn">View More</span>
+                </button>
+            </div>
+        </div>
+        <div class="container-section">
+            <div class="collapse navbar-collapse" id="navbar-menu2">
+                <ul class="sina-menu sina-menu-left" data-in="fadeInLeft" data-out="fadeInOut">
+                    <li>  <a class='nav-link page_url_act'  data-id='1' href='Indexes/actrules'> சட்டம் மற்றும் விதிகள் </a></li><li class='dropdown'> 
+                  <a class='dropdown-toggle page_url_act' data-id='2' data-toggle='dropdown' href='#'>புள்ளிவிவர தகவல்</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li>  <a class='nav-link page_url_act'  data-id='13' href='Indexes/road'> சாலை விபத்துக்கள் </a></li><li>  <a class='nav-link page_url_act'  data-id='14' href='Indexes/driving'> ஓட்டுநர் உரிமங்கள் </a></li><li>  <a class='nav-link page_url_act'  data-id='16' href='Indexes/enforcement'> சாலைப் பாதுகாப்பு நடவடிக்கைக்கான செயலாக்கப் பணிகள் </a></li><li>  <a class='nav-link page_url_act'  data-id='7' href='Indexes/revenue'> வருவாய் வசூல் விவரங்கள் </a></li><li>  <a class='nav-link page_url_act'  data-id='6' href='Indexes/growth'> வாகனங்களின் வளர்ச்சி </a></li><li class='dropdown'> 
+                  <a class='dropdown-toggle page_url_act' data-id='9' data-toggle='dropdown' href='#'>ஆராய்ச்சி பகுப்பாய்வு</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='12' href='moremenu/annualbook_2018_final.pdf'> புள்ளி விவர கையேடு 2017-18 </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='10' href='moremenu/ra5.pdf'> சாலைப் பாதுகாப்பு நடவடிக்கைகள் </a></li><li>  <a class='nav-link page_url_act'  data-id='11' href='Indexes/statis_analysis'> சாலை விபத்துக்கள்-பகுப்பாய்வு </a></li></ul></li><li>  <a class='nav-link page_url_act'  data-id='8' href='Indexes/additional'> கூடுதல் அட்டவணை </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='53' href='moremenu/mt_6eHYuXQ_2023_07_24.pdf'> குடிபோதையில் வாகனம் ஓட்டுபவர் மீது நடவடிக்கை </a></li><li>  <a class='nav-link page_url_act'  data-id='17' href='Indexes/monthly_information'> மாதாந்திர தகவல் கையேடு </a></li><li class='dropdown'> 
+                  <a class='dropdown-toggle page_url_act' data-id='3' data-toggle='dropdown' href='NULL'>புதிதாக பதிவு செய்யப்பட்ட வாகனம்</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li>  <a class='nav-link page_url_act'  data-id='4' href='Indexes/newlytn'> தமிழ்நாடு </a></li><li>  <a class='nav-link page_url_act'  data-id='5' href='Indexes/newlychennai'> சென்னை </a></li></ul></li></ul></li><li class='dropdown'> 
+                  <a class='dropdown-toggle page_url_act' data-id='18' data-toggle='dropdown' href='#'>சாலைப் பாதுகாப்பு</a><ul class="dropdown-menu common-bg-header-cyan-blue"><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='25' href='moremenu/road_cell.pdf'> சாலைப் பாதுகாப்பு வழிகாட்டு முகமை </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='22' href='moremenu/mt_6AQghet_2023_07_24.pdf'> முன்னணி நிறுவனம் சாலைப் பாதுகாப்பு வழிகாட்டு முகமை </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='35' href='moremenu/mt_1SOvjiJ_2023_07_24.pdf'> அவசர விபத்து நிவாரண சிகிச்சை மையங்கள் (EARC) </a></li><li>  <a class='nav-link page_url_act'  data-id='26' href='Indexes/retrofitment'> ரெட்ரோபிட்மென்ட் சுற்றறிக்கைகள் </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='21' href='moremenu/mt_1lPzlLt_2023_03_29.pdf'> மாவட்ட சாலைப்பாதுகாப்பு குழு </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='19' href='moremenu/mt_10KQxWaj_2023_07_24.pdf'> சாலைப் பாதுகாப்பு </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='23' href='moremenu/mt_5DeMCJH_2023_07_24.pdf'> சாலை விபத்துக்கள்-விவரம் </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='54' href='moremenu/mt_2rdPtny_2023_07_24.pdf'> இன்னுயிர் காப்போம் திட்டம்(IKT) </a></li><li> 
+                    <a target='_blank' class='nav-link page_url_act' data-id='20' href='moremenu/mt_3Upqyyk_2023_03_09.pdf'> மாநில சாலைப்பாதுகாப்பு மன்றம் </a></li></ul></li><li>  <a class='nav-link page_url_act'  data-id='55' href='Indexes/service_pollution'> புகைமாசினை கட்டுப்படுத்துதல் </a></li>                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- JS files -->
+<script src="common_file/lib/jquerycdn.js"  type="text/javascript"></script>
+<script src="menu/assets/js/bootstrap.min.js"  type="text/javascript"></script>
+<script src="menu/assets/js/wow.min.js"  type="text/javascript"></script>
+<script src="menu/assets/js/sina-nav.js"  type="text/javascript"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        // WOW animation initialize
+        new WOW().init();
+
+    });
+    $(".mobile-respone").click(function() {
+        $(".mobile-respone2").toggle();
+    });
+    $(".mobile-respone2").click(function() {
+        $(".mobile-respone").toggle();
+    });
+    $("#formButton").click(function() {
+        $("#form1").toggle();
+        var id = $(this).is('[data-id]') ? 'removeAttr' : 'attr';
+        $(this)[method]('data-id', '0');
+        // localStorage.clear();
+    });
+    jQuery(function($) {
+        var pgurl = window.location.href.substr(window.location.href.lastIndexOf("/") + 1);
+        $(".ruby-menu > li > a").each(function() {
+            if ($(this).attr("href") == pgurl || $(this).attr("href") == '')
+
+                // $(this).addClass("active");
+                $(this).parent("li").addClass("active");
+        })
+    });
+</script><div class="container-fluid">
+  <div id="banner-section">
+    <div class="carousel">
+      <div class="carousel-inner">
+        <div class="slide active">
+                                <img src="slide/carousel/Header_tamil.jpg" class="img-fluid">
+                  </div>
+        <div class="slide">
+          <img src="slide/carousel/driving.png" class="img-fluid">
+        </div>
+        <div class="slide">
+          <img src="slide/carousel/permit1.png" class="img-fluid">
+        </div>
+        <div class="slide">
+          <img src="slide/carousel/echellan_2.png" class="img-fluid">
+        </div>
+
+      </div>
+      <div class="arrow arrow-left"></div>
+      <div class="arrow arrow-right"></div>
+    </div>
+  </div>
+</div>
+<section class="common-bg-Sherpa-Blue">
+  <div class="container title-update">
+    <div class="d-flex d-flex-space-between marquee-text  d-flex-align-center">
+              <marquee class="update-marquee" scrollamount="5" onmouseover="stop()" onkeydown="start()" onfocus="start()" onmouseout="start()" width="95%">
+          <span class="title_span">உங்கள் சலான்/ போக்குவரத்து அபராதம் செலுத்தவும் / <a href="https://echallan.parivahan.gov.in/index/accused-challan" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">(இங்கே தேர்வு செய்யவும்) </a> </span>
+          <span class="title_span">இ சலான் வீடியோக்களுக்கு <a href="Indexes/home_youtube" style="text-decoration:none;" target="_blank">(இங்கே தேர்வு செய்யவும்)</a> இணையதளம் மூலம் அபராதம் செலுத்துவதற்கான நிலையான நடைமுறை </span>
+        </marquee>
+      
+    </div>
+  </div>
+</section><base href="https://tnsta.gov.in/" />
+<link rel="stylesheet" href="datatable/css/custom.css">
+<link rel="stylesheet" href="datatable/css/jquery.dataTables.min.css">
+<style>
+    .sub-division.container-fluid {
+        padding: 10px 12px;
+    }
+
+    .sub-division .box {
+        padding: 5px 2px;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        border-radius: 15px;
+    }
+
+    .sub-division .box:hover {
+        box-shadow: 2px 2px 10px #a5a5a5;
+        transform: scale(1.03);
+    }
+
+    .sub-division a:hover {
+        text-decoration: none;
+    }
+
+    .sub-division img {
+        object-fit: contain;
+        width: 35px;
+        height: 35px;
+    }
+
+    .sub-division p.text-muted {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    .sub-division.en-style b {
+        font-size: 1rem;
+        font-weight: bold;
+        color: #000;
+        line-height: 22px;
+    }
+
+    .sub-division.tn-style b {
+        font-size: .8rem;
+        font-weight: bold;
+        color: #000;
+        line-height: 22px;
+    }
+
+    .sub-division.rounded-circle {
+        width: 60px;
+        height: 60px;
+        background-color: red;
+    }
+
+    .sub-division .blue {
+        background-color: #bedcfa;
+    }
+
+    .sub-division .pale-blue {
+        background-color: #eff8ff;
+    }
+
+    .sub-division .pale-orange {
+        background-color: #ffe5b9;
+    }
+
+    .sub-division .pale-purple {
+        background-color: #e8e8e8;
+    }
+
+    .sub-division .pale-cyan {
+        background-color: #cffffe;
+    }
+
+    .sub-division .pale-pink {
+        background-color: #ffe4e4;
+    }
+
+    .sub-division .pale-pale {
+        background-color: #f4eeff;
+    }
+
+    .sub-division .pale-green {
+        background-color: #a0ffe6;
+    }
+
+    .sub-division .pale-pista {
+        background-color: #dbf6e9;
+    }
+
+
+
+    .btn-slide {
+        position: relative;
+        display: inline-block;
+        height: 50px;
+        width: 330px;
+        line-height: 50px;
+        margin: 8px 0;
+        padding: 0px;
+        border-radius: 25px;
+        box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+        background: var(--bs-radius-button-text);
+    }
+
+    .btn-slide:active {
+        box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.7);
+        -webkit-transform: scale(0.98);
+        transform: scale(0.96);
+    }
+
+    .btn-slide:hover {
+        background: var(--bs-radius-button-text);
+    }
+
+    .btn-slide span.circle {
+        display: block;
+        background-color: #fff;
+        position: absolute;
+        margin: 5px;
+        height: 40px;
+        width: 40px;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        transition: all 1.5s ease;
+    }
+
+    .btn-slide:hover span.circle {
+        left: 100%;
+        margin-left: -45px;
+        background-color: #fff;
+        color: #79f1fc;
+    }
+
+    .tn-style .btn-slide span.title {
+        position: absolute;
+        left: 70px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        color: #fff;
+        transition: all 1.5s linear;
+    }
+
+    .en-style .btn-slide span.title {
+        position: absolute;
+        left: 70px;
+        font-size: 0.9rem;
+        font-weight: bold;
+        color: #fff;
+        transition: all 1.5s linear;
+    }
+
+    .btn-slide span.title-hover {
+        opacity: 0;
+    }
+
+    .btn-slide:hover span.title {
+        opacity: 0;
+    }
+
+    .btn-slide:hover span.title-hover {
+        opacity: 1;
+        left: 60px;
+    }
+
+    .icon-wrap {
+        text-align: center;
+        z-index: 10px;
+    }
+
+    .btn-slide .fa {
+        font-size: 25px;
+        width: 28px;
+        padding: 0px 0px;
+    }
+
+    .student-profile .card {
+        border-radius: 10px;
+    }
+
+    .student-profile .card .card-header .profile_img {
+        width: 100px;
+        height: 100px;
+        object-fit: fill;
+        margin: 4px auto;
+        border: 5px solid #ccc;
+        border-radius: 10%;
+    }
+
+    .student-profile .card .card-header .profile_img.cm-profile {
+        width: 140px;
+        height: 140px;
+        object-fit: fill;
+        margin: 4px auto;
+        border: 5px solid #ccc;
+        border-radius: 10%;
+    }
+
+    .student-profile .card .card-header .profile_img.tm-profile {
+        width: 100px;
+        height: 100px;
+        object-fit: fill;
+        margin: 4px auto;
+        border: 5px solid #ccc;
+        border-radius: 10%;
+    }
+
+    .en-style .student-profile .card h3 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    .tn-style .student-profile .card h3 {
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .student-profile .card p {
+        font-size: 16px;
+        color: #000;
+    }
+
+    .tab-common-division ul.grid {
+        justify-content: center;
+        -ms-justify-content: center;
+        -ms-flex-pack: center;
+    }
+
+   
+
+    .new-minister-wrapper-box ul li:first-child {
+        padding: 0 10px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 24%;
+        flex: 0 0 24%;
+        max-width: 24%;
+        margin-bottom: 20px;
+    }
+
+    .division-individual {
+        border: 1px solid #cacaca;
+        padding: 0;
+        text-align: center;
+        border-radius: 4px;
+    }
+
+    .division-individual {
+        text-align: center;
+    }
+
+    .new-minister-wrapper-box ul li:first-child .mnstr-img img {
+        width: 140px;
+        /* height: 140px; */
+        object-fit: fill;
+        margin: 4px auto;
+        border: 5px solid #ccc;
+        border-radius: 10%;
+    }
+
+    section.new-minister-wrapper-box .mnstr-img img {
+        filter: none;
+        background-color: #fff;
+    }
+
+    section.new-minister-wrapper-box .mnstr-img img {
+        width: 140px;
+        height: 140px;
+        /* border-radius: 100%;
+        box-shadow: 0 3px 6px #00000029; */
+        object-fit: fill;
+        margin: 4px auto;
+        border: 5px solid #ccc;
+    }
+
+    .tab-common-division ul li img {
+        height: 45px;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 0px;
+        margin-bottom: 30px;
+        width: 45px;
+        object-fit: contain;
+    }
+
+    .mnstr-img img {
+        width: 100%;
+        -ms-transition: all .8s;
+        -moz-transition: all .8s;
+        -webkit-transition: all .8s;
+        transition: all .8s;
+    }
+
+    /* 
+    img,
+    svg {
+        vertical-align: middle;
+        max-width: 100%;
+    } */
+
+
+
+
+
+
+
+    section.new-minister-wrapper-box .info-mnstr strong.en {
+        font-size: 1rem;
+        padding-right: 0;
+        margin: 15px 0 5px;
+        display: block;
+        font-weight: 600;
+        color: #FFF;
+        padding-right: 10px;
+    }
+
+    section.new-minister-wrapper-box .info-mnstr strong.tn {
+        font-size: 0.8rem;
+        padding-right: 0;
+        margin: 15px 0 5px;
+        display: block;
+        font-weight: 600;
+        color: #FFF;
+        padding-right: 10px;
+    }
+
+    .info-mnstr span.en {
+        display: block;
+        line-height: 15px;
+        font-size: 14px;
+        color: #FFF;
+
+    }
+
+    .info-mnstr span.tn {
+        display: block;
+        line-height: 15px;
+        font-size: 9px;
+        color: #FFF;
+
+    }
+
+    .info-mnstr {
+        /* background: #fff; */
+        margin: 0px;
+        padding: 1px;
+        /* background-color: rgba(0, 0, 0, 0.1); */
+        background-color: rgb(0, 71, 87);
+        border-bottom: 1px solid rgba(0, 0, 0, .125);
+    }
+
+    .division-individual a {
+        display: block;
+        padding: 0px 0px;
+    }
+</style>
+
+<section class="mt-2 mb-1 tabs-bg student-profile">
+    <div class="container mt-2">
+        <div class="row">
+            <div class="col-lg-4">
+                <section class="new-minister-wrapper-box">
+                    <div class="row pb-2">
+                                                            <div class="col-lg-6">
+                                        <div class="division-individual">
+                                            <div class="listmnistr">
+                                                <a href="">
+                                                    <div class="mnstr-img">
+                                                        <img style="width: 115px; height: 125px;"
+                                                            src="profile/profile_photo_4MfeHBp_2023_02_27.jpeg">
+                                                    </div>
+                                                    <div class="info-mnstr">
+                                                        <strong class="tn "> திரு மு.க.ஸ்டாலின் </strong>
+                                                        <span class="tn " style="padding: 5px;"> மாண்புமிகு முதலமைச்சர் </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            <div class="col-lg-6">
+                                        <div class="division-individual">
+                                            <div class="listmnistr">
+                                                <a href="Indexes/about_transport_minister">
+                                                    <div class="mnstr-img">
+                                                        <img style="width: 115px; height: 125px;"
+                                                            src="profile/profile_photo_2XFMOih_2023_02_27.jpeg">
+                                                    </div>
+                                                    <div class="info-mnstr">
+                                                        <strong class="tn "> திரு எஸ்.எஸ்.சிவசங்கர் </strong>
+                                                        <span class="tn " style="padding: 5px;"> மாண்புமிகு போக்குவரத்துத் துறை அமைச்சர் </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            <div class="col-lg-6">
+                                        <div class="division-individual">
+                                            <div class="listmnistr">
+                                                <a href="Indexes/about_home_secretary">
+                                                    <div class="mnstr-img">
+                                                        <img style="width: 115px; height: 125px;"
+                                                            src="profile/profile_photo_10QLzptw_2024_07_19.jpeg">
+                                                    </div>
+                                                    <div class="info-mnstr">
+                                                        <strong class="tn "> திரு. தீரஜ் குமார் இ.ஆ.ப, </strong>
+                                                        <span class="tn " style="padding: 5px;"> அரசு கூடுதல் தலைமை செயலர் / உள் துறை செயலர் </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                                            <div class="col-lg-6">
+                                        <div class="division-individual">
+                                            <div class="listmnistr">
+                                                <a href="Indexes/about_transport_commissioner">
+                                                    <div class="mnstr-img">
+                                                        <img style="width: 115px; height: 125px;"
+                                                            src="profile/profile_photo_1qFSABl_2024_07_19.jpeg">
+                                                    </div>
+                                                    <div class="info-mnstr">
+                                                        <strong class="tn "> திரு. சுன்சோங்கம் ஜடக் சிரு, இ,ஆ.ப, </strong>
+                                                        <span class="tn " style="padding: 5px;"> முதன்மை செயலர்/போக்குவரத்து மற்றும் சாலைப் பாதுகாப்பு ஆணையர் </span>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                            </div>
+                </section>
+            </div>
+
+            <div class="tn-style message-home col-lg-5">
+                <div class="card">
+                    <div class="card-header common-bg-Sherpa-Blue">
+                        <ul id="mytab" class="nav nav-tabs nav-tabs-neutral " role="tablist" data-background-color="orange">
+                            <li class="nav-item">
+                                <a class="nav-link active lang" data-toggle="tab" href="#home1" role="tab" key="lbl_whatsnew">What's New</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lang" data-toggle="tab" href="#profile1" role="tab" key="lbl_notificaton">Notification</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lang" data-toggle="tab" href="#messages1" role="tab" key="lbl_tender"> Tender</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="card-body">
+                        <div class="tab-content home-banner">
+                            <div class="tab-pane active" id="home1" role="tabpanel">
+                                <marquee class="tn-style" behavior="scroll" direction="up" scrollamount="2" onmouseover="this.stop();" onmouseout="this.start();">
+
+                                    <strong class="marquee-text-col">
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_7ljtJot_2024_09_12.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    நேரடி உதவியாளர் பணி நியமன ஆணை                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_2asgRtT_2024_07_05.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    இயக்கூர்திகள் சட்டங்கள்-நிருவாகம்  அறிவிப்புகள்-2024-25                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_5XGqZCO_2024_06_18.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    இதர மாநிலத்தில் பதிவு செய்யப்பட்டு, அகில இந்திய சுற்றுலா அனுமதிச் சீட்டு விதிகளுக்குப் புறம்பாக  தமிழ்நாட்டில் இயக்கப்படும் ஆம்னி பேருந்துகளின்  பட்டியல்                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_6YubNjG_2024_06_18.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    புதிய ஒருங்கிணைந்த சிற்றுந்துத் திட்டம், 2024                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_5SECAVg_2024_06_11.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    பொது அறிவிப்பு  -  அகில இந்திய  சுற்றுலா   அனுமதிச்சீட்டு                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_2RvpdTU_2023_12_10.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    வெள்ளத்தில் பாதிக்கப்பட்ட வாகனங்களுக்காக சென்னை நகரத்தில் உள்ள வாகன விற்பனையாளர்கள் விவரம்                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_6gcDBMp_2023_12_10.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    மிக்ஜாம் புயல் காரணமாக வெள்ளத்தில் பாதிக்கப்பட்ட வாகனங்களுக்கான உதவி சேவை                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_8hJQAVS_2023_11_08.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    1974 ஆம் ஆண்டின் தமிழ்நாடு மோட்டார் வாகனங்கள் வரிவிதிப்புச் சட்டம் மற்றும் விதிகளில் திருத்தங்கள்  - சட்டம் எண் 30 2023                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_8WcgDRp_2023_08_10.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    தொடர்பு இல்லாத சேவை - முக்கியமான அறிவிப்புகள்                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_en_5glptWv_2023_06_13.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    TWO YEARS NORMS COMPLETION IN ASSISTANT CADRE AND ELIGIBLE CANDIDATES NOTIFIED                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_7sgezJG_2023_03_31.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    போக்குவரத்து பட்ஜெட்டுக்கான அறிவிப்பு                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_2qBQVjN_2023_03_28.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    பட்ஜெட் 2023-2024 - I                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_1TLdQze_2023_03_28.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    பட்ஜெட் 2023-2024                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_2FItXZi_2023_03_27.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    நேரடி தொடர்பில்லா சேவைகள்-  மேலும் மூன்று சேவைகள் அரசாணை எண் 237                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_5ZOZXUQ_2023_03_27.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    நேரடி தொடர்பில்லா சேவைகள்- மூன்று சேவைகள் அரசாணைஎண் 415                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_5VYWXGq_2023_03_27.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    இன்னுயிர் காப்போம் திட்டத்தின் கீழ்  சாலைப் பாதுகாப்புக்கான சிறப்புப் பணிக்குழு                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_9DFKSOo_2023_03_27.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    கள அபராதம் அரசாணை                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_1DdkUYB_2023_03_27.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    பள்ளிப் பேருந்துகளில் கேமரா பொருத்துவது தொடர்பாக                                                </a>
+                                            </h6>
+                                            <br>
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="whatsnew/whatsnew_tn_5eZKiYu_2023_03_27.pdf" target="_blank"><i class="fa fa-share"></i>
+                                                    பேட்டரியால்இயங்கும் வாகனங்களுக்கு வரி விலக்கு அளித்தல்                                                </a>
+                                            </h6>
+                                            <br>
+                                                                            </strong>
+                                </marquee>
+                                <div class="text-center">
+                                    <a href="Indexes/whatsnew_table" target="_self" class="btn btn-sm btn-gov lang" key="view_more_btn" aria-label="View More" title="View More">More</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="profile1" role="tabpanel">
+                                <marquee behavior="scroll" direction="up" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
+                                    <strong class="marquee-text-col">
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_7jUCAbI_2023_11_08.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    1974 ஆம் ஆண்டின் தமிழ்நாடு மோட்டார் வாகனங்கள் வரிவிதிப்புச் சட்டம் மற்றும் விதிகளில் திருத்தங்கள் - சட்டம் எண் 30 2023                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_1suumEm_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    G.S.R. 714(E) அறிவிக்கை-கட்டணங்களில் திருத்தம்                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_6KXnKBV_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    பொதுமக்கள் ஆதாரை அடையாள ஆவணமாக பயன்படுத்தி, பழகுநர் உரிமம் பெறுதல், ஓட்டுநர் உரிமம் புதுப்பித்தல் மற்றும் ஓட்டுநர் உரிமத்தில் முகவரி மாற்றம் செய்தல் ஆகிய நேரடி தொடர்பில்லா சேவைகள்                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_3FpETUF_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    சாலைப் பாதுகாப்பு நிதி                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_7aUIVWE_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    மாவட்ட சாலைப் பாதுகாப்புக் குழு - மறுசீரமைக்கப்பட்டது                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_2XDzYXA_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    சிறப்பு பதிவெண் கட்டணம்                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_2IFKCPh_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    அரசாணை எண் 611,  ஆட்டோரிக்ஷா கட்டணம்                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_6yjkzdi_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    சாலை பாதுகாப்பு சங்கம் அரசாணை                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_8NdYJvV_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    நற்கருணை வீரன் (Good Samaratin) வழிகாட்டுதல்களின்  பாதுகாப்பு                                                </a>
+                                            </h6>
+                                            <br>
+                                         <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="notification/notification_tn_3rFOpUu_2023_03_29.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    நல்ல சமரித்தான்ஸ்க்கான செயல்பாட்டு செயல்முறை                                                </a>
+                                            </h6>
+                                            <br>
+                                                                            </strong>
+                                </marquee>
+                                <div class="text-center">
+                                    <a href="Indexes/notification_table" target="_self" class="btn btn-sm btn-gov lang" key="view_more_btn" aria-label="View More" title="View More">More</a>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="messages1" role="tabpanel">
+                                <marquee behavior="scroll" direction="up" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">
+
+                                    <strong class="marquee-text-col">
+                                                                                    <h6 class="p-0 m-0">
+                                                <a class="pdf_href" href="tender/tender_en_4AXEJIY_2024_02_07.pdf" target="_blank"> <i class="fa fa-share"></i>
+                                                    Consulting Services for preparation of feasibility report and providing Transaction Advisory Services for setting up of 20 Automated Testing Stations (ATS) under Public Private Partnership in Tamil Nadu for Transport Department                                                </a>
+                                            </h6>
+                                            <br>
+
+                                                                            </strong>
+                                </marquee>
+                                <div class="text-center">
+                                    <a href="Indexes/tender_table" target="_self" class="btn btn-sm btn-gov lang" key="view_more_btn" aria-label="View More" title="View More">More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <section class="background-img tn-style">
+                    <div id="wrap" class="icon-wrap">
+                        <div> <a class="btn-slide common-bg-radius-btn-slide" href="indexes/circular_table">
+                                <span class="circle"><i class="fa fa-bullhorn"></i></span>
+                                <span class="title lang" key="lbl_type_approval">TYPE APPROVAL</span>
+                                <span class="title title-hover lang" key="clickhere">Click Here</span>
+                            </a> </div>
+
+                        <div> <a class="btn-slide common-bg-radius-btn-slide" href="indexes/payment">
+                                <span class="circle"><i class="fa fa-credit-card"></i></span>
+                                <span class="title lang" key="epayment">E-PAYMENT</span>
+                                <span class="title title-hover lang" key="clickhere">Click Here</span>
+                            </a> </div>
+                        <div> <a class="btn-slide common-bg-radius-btn-slide" href="https://vahan.parivahan.gov.in/fancy" target="_blank">
+                                <span class="circle"><i class="fa fa-book"></i>
+                                </span>
+                                <span class="title lang" key="lbl_fancynumber">FANCY NUMBER BOOKING</span>
+                                <span class="title title-hover">Check Availability</span>
+                            </a> </div>
+                        <div> <a class="btn-slide common-bg-radius-btn-slide" href="https://vahan.parivahan.gov.in/vahanservice/vahan/ui/statevalidation/homepage.xhtml?statecd=Mzc2MzM2MzAzNjY0MzIzODM3NjIzNjY0MzY2MjM3NTQ0ZQ==" target="_blank">
+                                <span class="circle"><i class="fa fa-taxi"></i></span>
+                                <span class="title lang" key="h-mv-green-tax">MV / GREEN TAX</span>
+                                <span class="title title-hover lang" key="clickhere">Click Here</span>
+                            </a> </div>
+                        <div> <a class="btn-slide common-bg-radius-btn-slide" href="https://vahan.parivahan.gov.in/puc/" target="_blank">
+                                <span class="circle"><i class="fa fa-fire"></i></span>
+                                <span class="title lang" key="pucc">PUCC</span>
+                                <span class="title title-hover lang" key="clickhere">Click Here</span>
+                            </a> </div>
+                        <div> <a class="btn-slide common-bg-radius-btn-slide" href="https://checkpost.parivahan.gov.in/checkpost/faces/login.xhtml?faces-redirect=true/#" target="_blank">
+                                <span class="circle"><i class="fa fa-refresh fa-spin"></i></span>
+                                <span class="title lang" key="cpost">CHECKPOST</span>
+                                <span class="title title-hover lang" key="clickhere">Click Here</span>
+                            </a> </div>
+                    </div>
+                    <section>
+            </div>
+
+        </div>
+</section>
+<div>
+    <p>&nbsp;</p>
+</div>
+<section class="sub-division tn-style container-fluid common-bg-Sherpa-Blue">
+    <div class="container  rounded ">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-orange">
+                            <img src="common_img/vahan.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a target="_blank" href="https://parivahan.gov.in/parivahan/">
+                                <b class="lang" key="lbl_vahan">Vahan</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center ">
+                            <img src="common_img/sarathi.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a target="_blank" href="https://sarathi.parivahan.gov.in/sarathiservice/">
+                                <b class="lang" key="lbl_sarathi">Sarathi</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-green">
+                            <img src="common_img/v-vehicle-registration.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a target="_blank" href="https://vahan.parivahan.gov.in/nrservices/faces/user/citizen/citizenlogin.xhtml">
+                                <b class="lang" key="lbl_vehiclestatus">Vehicle Status</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-pista">
+                            <img src="common_img/png-transparent-identity-document-computer-icons-driver-s-license-driving-driving-text-drivers-license.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a target="_blank" href="https://parivahan.gov.in/rcdlstatus/?pur_cd=101">
+                                <b class="lang" key="lbl_licensestatus">License Status</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3 text-center d-flex align-items-center justify-content-center blue">
+                            <img src="common_img/question-bank-paper-500x500.jpg" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+
+                            <a href="about_us/Stall_questionBank_Report.pdf" target="_blank">
+                                <b class="lang" key="lbl_llquestion_bank">LL Question Bank</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-orange">
+                            <img src="common_img/images.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="https://sarathi.parivahan.gov.in/sarathiservice/stateSelection.do" target="_blank">
+                                <b class="lang" key="lbl_test_practices">LL Test Practice</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6  my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-orange">
+                            <img src="common_img/unnamed.png" alt="">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="Indexes/mparivahan">
+                                <b class="lang" key="lbl_mparivahan">mParivahan</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 my-2">
+                <div class="box bg-white">
+                    <div class="d-flex align-items-center">
+                        <div class="rounded-circle mx-3  d-flex align-items-center justify-content-center pale-pista">
+                            <img src="common/img/link.png" alt="Related Links">
+                        </div>
+                        <div class="d-flex flex-column">
+                            <a href="Indexes/related_link">
+                                <b class="lang" key="lbl_related_link">Related Links</b>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div>
+    <p>&nbsp;</p>
+</div>
+<style>
+    /* Slick Slider */
+
+    /* .tn-logo .slick-prev,
+    .tn-logo .slick-next {
+        position: absolute;
+        top: 135%;
+        font-size: 1.8rem;
+    } */
+    .tn-logo .slick-prev,
+    .tn-logo .slick-next {
+        position: absolute;
+        top: 0 !important;
+        font-size: 1.5rem;
+    }
+
+    .tn-logo .slick-prev {
+        left: 0;
+    }
+
+    .tn-logo .slick-next {
+        right: 0;
+    }
+
+    .tn-logo .slick-slider {
+        position: relative;
+        display: block;
+        box-sizing: border-box;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        -khtml-user-select: none;
+        -ms-touch-action: pan-y;
+        touch-action: pan-y;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .tn-logo .slick-list {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    .tn-logo .slick-list:focus {
+        outline: none;
+    }
+
+    .tn-logo .slick-list.dragging {
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .tn-logo .slick-slider .slick-track,
+    .tn-logo .slick-slider .slick-list {
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    .tn-logo .slick-track {
+        position: relative;
+        top: 0;
+        left: 0;
+        display: block;
+    }
+
+    .tn-logo .slick-track:before,
+    .tn-logo .slick-track:after {
+        display: table;
+        content: '';
+    }
+
+    .tn-logo .slick-track:after {
+        clear: both;
+    }
+
+    .tn-logo .slick-loading .slick-track {
+        visibility: hidden;
+    }
+
+    .tn-logo .slick-slide {
+        display: none;
+        float: left;
+        height: 100%;
+        min-height: 1px;
+    }
+
+    .tn-logo [dir='rtl'] .slick-slide {
+        float: right;
+    }
+
+    .tn-logo .slick-slide img {
+        display: block;
+    }
+
+    .tn-logo .slick-slide.slick-loading img {
+        display: none;
+    }
+
+    .tn-logo .slick-slide.dragging img {
+        pointer-events: none;
+    }
+
+    .tn-logo .slick-initialized .slick-slide {
+        display: block;
+    }
+
+    .tn-logo .slick-loading .slick-slide {
+        visibility: hidden !important;
+    }
+
+    .tn-logo .slick-vertical .slick-slide {
+        display: block;
+        height: auto;
+        border: 1px solid transparent;
+    }
+
+    .tn-logo .slick-arrow.slick-hidden {
+        display: none;
+    }
+
+    .tn-logo .slide {
+        transition: filter .4s;
+        margin: 0px 40px;
+    }
+
+    .tn-logo .fa {
+        color: #96bd0b;
+    }
+
+    .tn-logo .slick-prev {
+        left: 0;
+    }
+
+    .tn-logo .slick-prev,
+    .tn-logo .slick-next {
+        position: absolute;
+        top: 35%;
+        font-size: 1.8rem;
+    }
+
+    .section.tn-logo {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+</style>
+<!-- <div>
+    <p>&nbsp;</p>
+</div> -->
+<section class="container pt-2 pb-1 tn-logo">
+    <section class="customer-logos slider">
+        <div class="slide">
+            <a href="https://www.india.gov.in/" target="_blank"><img src="logoslide/images/indiagov.png" class="img-fluid" /></a>
+        </div>
+        <div class="slide">
+            <a href="https://www.nvsp.in/"><img src="logoslide/images/nationvote.png" class="img-fluid" /></a>
+        </div>
+        <div class="slide">
+            <a href="https://eservices.tnpolice.gov.in/CCTNSNICSDC/Index?0" target="_blank"><img src="logoslide/images/cctns.png" class="img-fluid" /></a>
+        </div>
+        <div class="slide">
+            <a href="https://data.gov.in/" target="_blank"><img src="logoslide/images/datagov.png" class="img-fluid" /></a>
+        </div>
+        <div class="slide">
+            <a href="https://www.tn.gov.in/"  target="_blank"><img src="logoslide/images/tngovin.png" class="img-fluid" /></a>
+        </div>
+        <div class="slide" >
+            <a href="https://www.digilocker.gov.in/" target="_blank"><img src="logoslide/images/digilocker.png" class="img-fluid" /></a>
+        </div>
+    </section>
+</section>
+
+
+<script>
+    $(document).ready(function() {
+        $('.customer-logos').slick({
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: true,
+            dots: false,
+            pauseOnHover: false,
+            prevArrow: '<i class="slick-prev fa fa-angle-left"></i>',
+            nextArrow: '<i class="slick-next fa fa-angle-right"></i>',
+            responsive: [{
+                breakpoint: 924,
+                settings: {
+                    slidesToShow: 3
+                }
+            },{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 375,
+                settings: {
+                    slidesToShow: 2
+                }
+        }]
+        });
+
+    });
+</script><style>
+    #footer {
+        /* clear: both;      */
+        font: normal .95em/1.6em "Arial";
+        text-align: center;
+        width: 100%;
+        /* height: 10vh; */
+        /* background: #0d7086; */
+    }
+
+    #content {
+        text-align: justify;
+        padding: 0;
+    }
+
+    .footerMenu {
+        text-align: center;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    }
+
+    .footerMenu ul {
+        display: inline-block;
+        list-style-type: none;
+        padding-left: 0;
+        margin: 0px;
+    }
+
+    .footerMenu ul li {
+        display: inline-block;
+        color: #7e7d7d;
+    }
+
+    .footerMenu ul li a {
+        display: block;
+        padding: 5px 10px;
+    }
+
+    .footerMenu a,
+    .footerMenu a:hover {
+        background: inherit;
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 13px;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        line-height: 18px;
+    }
+
+    .copyRights {
+        font-size: 15px;
+        /* background-image: url(css/sunny/images/ui-bg_gloss-wave_60_fece2f_500x100.png); */
+        color: black;
+        padding: 0px;
+        text-align: center;
+        background-size: cover;
+    }
+
+    img {
+        border-style: none;
+    }
+
+    .copyRights {
+        font-size: 15px;
+        color: black;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1320px;
+        margin: 0px auto;
+        padding: 15px 0px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .copyflex {
+        flex-grow: 1;
+    }
+
+    @media only screen and (min-width:768px) and (max-width:991px) {
+        .copyRights {
+            flex-direction: column;
+            padding: 0px 15px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .copyRights {
+            flex-direction: column;
+            padding: 0px 15px;
+        }
+    }
+</style>
+<div id="footer" class="common-bg-footer-contentbg">
+    <div class="footerMenu footerContrastChange coomon-bg-footer" style="padding: 4px 0px">
+        <ul>
+            <li><a class="fontAlign lang" key="Websitepolicieshead" style="border:none;" href="Indexes/websitepolicies">Website Policies</a></li>
+            <li><a class="fontAlign lang" key="disclaimer_title" style="border:none;" href="Indexes/disclaimer">Disclaimer</a></li>
+            <li><a class="fontAlign lang" key="contactus_title" style="border:none;" href="Indexes/footer_contactus">Contact Us</a></li>
+        </ul>
+    </div>
+    <div class="copyRights copyRightcontrastChange">
+        <div class="copyRightLogos" style="      text-align: start;align-self: center;">
+            <a style="border:none;" href="http://www.nic.in/" onclick="return confirm('You are being redirected to an external website. Please note that Prohibition and Excise Department cannot be held responsible for external websites content &amp; privacy policies.');" aria-label="http://www.nic.in/ - External site that opens in a new window" title="http://www.nic.in/ - External site that opens in a new window" target="_blank">
+                <img src="common/img/niclogo.png" alt="National Informatics Centre opens a new window" width="150"></a>
+        </div>
+        <div class="copyflex">
+                            <div class="copyRightsText fontAlign" style="width: auto;color:#fff;font-weight:500;font-family: Verdana, Arial, Helvetica, sans-serif;">
+                    <p><span>போக்குவரத்து மற்றும் சாலைப் பாதுகாப்பு ஆணையரகத்திற்குச் சொந்தமான மற்றும்
+                            பராமரிக்கப்படும் உள்ளடக்கங்கள்,</span>
+                    </p>
+                    <p><a class="copyRightsHover" style="border:none;font-weight: 501;color:#fff;" href="http://www.tn.nic.in/" target="_blank" onclick="return confirm('You are being redirected to an external website. Please note that Prohibition and Excise Department cannot be held responsible for external websites content &amp; privacy policies.');" aria-label="National Informatics Centre - External site that opens in a new window" title="National Informatics Centre - External site that opens in a new window"><span>தேசிய தகவல்
+                                மையத்தால் (NIC)<span></a><span> வடிவமைக்கப்பட்டு,
+                            மேம்படுத்தப்பட்டு இணையதளத்தில் பதிவேற்றம் செய்யப்பட்டன,</span>
+                    </p>
+                    <p><span>கடைசியாகப் புதுப்பிக்கப்பட்டது,</span>
+                        24 டிசம்பர் 2024                    </p>
+                </div>
+
+                    </div>
+    </div>
+</div>
+<script src="common_file/lib/jquerycdn.js" type="text/javascript"></script>
+<script src="tnweb/lib/ajax-handler.js" type="text/javascript"></script>
+<script>
+    function preventProp(e) {
+        if (confirm("Are you sure you want to open this link ?")) {
+            return true;
+        } else {
+            e.preventDefault();
+        }
+    }
+</script>
+<script type="text/javascript">
+    function logout() {
+        var baseurl = "https://tnsta.gov.in/UserController/logout";
+        jQuery.ajax({
+            url: baseurl,
+            success: function(data) {
+                window.sessionStorage.clear();
+                sessionStorage.clear();
+                location.reload(); // then reload the page.(3)
+            }
+        });
+    }
+    (function($) {
+        $.fn.fontResize = function(options) {
+            var increaseCount = 0;
+            var self = this;
+
+            var changeFont = function(element, amount) {
+                var baseFontSize = parseInt(element.css('font-size'), 10);
+                var baseLineHeight = parseInt(element.css('line-height'), 10);
+                element.css('font-size', (baseFontSize + amount) + 'px');
+                element.css('line-height', (baseLineHeight + amount) + 'px');
+            };
+
+            options.increaseBtn.on('click', function(e) {
+                e.preventDefault();
+                if (increaseCount === 3) {
+                    return;
+                }
+                self.each(function(index, element) {
+                    changeFont($(element), 1);
+                });
+                increaseCount++;
+            });
+
+            options.decreaseBtn.on('click', function(e) {
+                e.preventDefault();
+                if (increaseCount === 0) {
+                    return;
+                }
+                self.each(function(index, element) {
+                    changeFont($(element), -1);
+                });
+                increaseCount--;
+            });
+        }
+    })(jQuery);
+
+    $(function() {
+        $('a,h2,h3,h5,h6,ul,li,p,.title,title-hover,strong,b,copyright,#level_11,select,table,tr,td,.lang ').fontResize({
+            increaseBtn: $('#increasetext'),
+            decreaseBtn: $('#decreasetext')
+        });
+    });
+    $("#resettext").click(function() {
+        window.location.reload();
+    })
+    $(document).ready(function() {
+        $('#sidebarCollapse').on('click', function() {
+            $('#sidebar').toggleClass('active');
+            $('#wrap').toggleClass('active');
+        });
+
+        $('.more-button,.body-overlay').on('click', function() {
+            $('#sidebar,.body-overlay').toggleClass('show-nav');
+        });
+    });
+</script>
+<script src="logoslide/js/slick.js" type="text/javascript"></script>
+<script src="slide/js/responsive-carousel.js" type="text/javascript"></script>
+<script>
+    // Wait for 3 seconds, then hide the loader and show content
+    setTimeout(() => {
+        document.querySelector(".loader-wrapper").style.display = "none";
+        document.querySelector("body.loading .wrap").style.display = "block";
+    }, 500);
+</script>
+<script>
+    // Custom options for the carousel
+    var args = {
+        arrowRight: '.arrow-right',
+        arrowLeft: '.arrow-left',
+        speed: 700,
+        slideDuration: 4000
+    };
+    // start BannerSlide
+    $('.carousel').BannerSlide(args);
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+
+
+        $('#translate').hide();
+        fetch('tnweb/json/nav_about.json')
+            .then(response => response.json())
+            .then(data => {
+                arrLang = data;
+                $('#translate').show();
+                translate();
+            });
+
+        function translate() {
+            let lang = sessionStorage.getItem('lang') || (function() {
+                let phpLang = "tn";
+                sessionStorage.setItem('lang', phpLang);
+                return phpLang;
+            })();
+
+            $('.lang').each(function(index, item) {
+                $(this).text(arrLang[lang][$(this).attr('key')]);
+                document.getElementById('translate').value = lang;
+            });
+            // var baseurl = "UserController/lang";
+            // jQuery.ajax({
+            //     url: baseurl,
+            //     data: {
+            //         lang: localStorage.getItem('lang')
+            //     },
+            //     type: 'post',
+            //     success: function(response) {
+            //         console.log(response);
+            //         $("#translate option:selected");
+            //     }
+            // });
+
+        };
+
+        $(function() {
+            $('#translate').change(function() {
+                var selectedLang = $(this).val();
+                sessionStorage.setItem('lang', selectedLang);
+                translate();
+                var baseurl = "UserController/lang";
+                jQuery.ajax({
+                    url: baseurl,
+                    data: {
+                        lang: selectedLang
+                    },
+                    type: 'post',
+                    success: function(response) {
+                        $("#translate option:selected");
+                        window.location.reload();
+                    }
+                });
+            });
+        });
+    });
+    $(window).on('load', function() {
+        $('body').addClass('colorblindness_color' + localStorage.getItem('theme-color'));
+    });
+    $(document).ready(function() {
+        $('body').addClass('colorblindness_color' + localStorage.getItem('theme-color'));
+        if ((localStorage.getItem("url_id")) && (localStorage.getItem("url_id")) != '0') {
+            $('.formdd').show();
+        } else {
+            $('.formdd').hide();
+        }
+        var lang = sessionStorage.getItem('lang') || (sessionStorage.getItem('lang', 'tn'), 'tn');
+        var baseurl = "UserController/lang";
+        jQuery.ajax({
+            url: baseurl,
+            data: {
+                lang: lang
+            },
+            type: 'post',
+            success: function(data) {
+                $("#translate option:selected");
+            }
+        });
+
+    });
+    $('.page_url_act').click(function() {
+        localStorage.setItem('url_id', ($(this).data("id")));
+
+    });
+    $('.colorblindness_page').click(function() {
+        localStorage.setItem('theme-color', ($(this).data("id")));
+        $('body').attr('class', $(this).attr('class').split(' ')[1]);
+    });
+</script>
+<script type="text/javascript">
+  (function(d, t) {
+      var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      v.onload = function() {
+        window.voiceflow.chat.load({
+          verify: { projectID: '67a0303ea6608571e4b6c036' },
+          url: 'https://general-runtime.voiceflow.com',
+          versionID: 'production'
+        });
+      }
+      v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+  })(document, 'script');
+</script>
+</body>
+
+</html>

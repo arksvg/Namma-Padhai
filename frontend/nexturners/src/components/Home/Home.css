@@ -1,0 +1,89 @@
+.container {
+  padding: 40px;
+  text-align: center;
+}
+
+.header-section {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.highlight {
+  color: #007b8f;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.description {
+  font-size: 16px;
+  width: 80%;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.header-image {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.features-title {
+  margin-top: 40px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.features-section {
+  margin-top: 20px;
+}
+
+.feature-card {
+  background: linear-gradient(135deg, #007b8f, #44a8b3);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+}
+
+.feature-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.feature-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.feature-button {
+  margin-top: 10px;
+  background: white;
+  color: #007b8f;
+  border: none;
+  font-weight: bold;
+}
+
+.chat-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #007b8f;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}

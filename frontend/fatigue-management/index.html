@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webcam Object Detection</title>
+</head>
+
+<body>
+    <h1>Fatigue Management</h1>
+    <video id="video" width="640" height="480" autoplay></video>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+
+    <div id="predictions"></div>
+    <script type="text/javascript">
+        (function (d, t) {
+            var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+            v.onload = function () {
+                window.voiceflow.chat.load({
+                    verify: { projectID: '67a0303ea6608571e4b6c036' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                });
+            }
+            v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+    </script>
+    <script>
+        const video = document.getElementById("video");
+        const canvas = document.getElementById("canvas");
+        const context = canvas.getContext("2d");
+
+        // Create an object to keep track of consecutive detections for each prediction label
+        const consecutivePredictions = {
+            seatbelt: 0,
+            sleeping: 0,
+            yawning: 0,
+            cigarette: 0
+        };
+
+        // Web Audio API function for different Beep Sounds
+        function playBeep(type) {
+            console.log("ALERT triggered for " + type + " based on predictions!");
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+            const oscillator = audioContext.createOscillator();
+
+            // Set frequency based on the alert type
+            switch (type) {
+                case "seatbelt":
+                    oscillator.frequency.setValueAtTime(500, audioContext.currentTime); // Low frequency for seatbelt alert
+                    break;
+                case "sleeping":
+                    oscillator.frequency.setValueAtTime(1000, audioContext.currentTime); // Standard frequency for sleeping alert
+                    break;
+                case "yawning":
+                    oscillator.frequency.setValueAtTime(1500, audioContext.currentTime); // High frequency for yawning alert
+                    break;
+                case "cigarette":
+                    oscillator.frequency.setValueAtTime(2000, audioContext.currentTime); // Very high frequency for cigarette (smoking) alert
+                    break;
+                default:
+                    oscillator.frequency.setValueAtTime(1000, audioContext.currentTime); // Default frequency
+                    break;
+            }
+
+            oscillator.type = 'sine'; // Wave type (sine wave)
+            oscillator.connect(audioContext.destination);
+            oscillator.start();
+            oscillator.stop(audioContext.currentTime + 0.5); // Duration (0.5 seconds)
+        }
+
+        // Function to start the webcam
+        async function startWebcam() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({
+                    video: { facingMode: "user" } // Ensures front camera usage
+                });
+                video.srcObject = stream;
+            } catch (error) {
+                console.error("Error accessing webcam:", error);
+                alert("Please allow camera access and use HTTPS.");
+            }
+        }
+
+
+        // Function to capture the current frame from the webcam and send it to the server
+        async function captureAndDetect() {
+            context.drawImage(video, 0, 0, canvas.width, canvas.height);
+            const base64Image = canvas.toDataURL("image/jpeg").split(",")[1]; // Extract base64 string
+
+            const response = await fetch("http://localhost:8000/detect/", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ image_base64: base64Image })
+            });
+
+            const data = await response.json();
+
+            if (data.error) {
+                console.error("Error:", data.error);
+            } else {
+                handlePredictions(data.predictions);
+            }
+        }
+
+        // Function to handle the predictions and trigger alerts
+        function handlePredictions(predictions) {
+            let output = "<h3>Predictions</h3>";
+            let alertTriggered = false;
+
+            predictions.forEach(prediction => {
+                const { label, confidence } = prediction;
+                output += `<p>${label}: ${(confidence * 100).toFixed(2)}%</p>`;
+
+                if (label === "face" && confidence < 0.15) {
+                    return
+                }
+
+                // Check thresholds to trigger alerts (example: threshold 70% confidence)
+                if (label === "seatbelt") {
+                    if (confidence < 0.1) {
+                        consecutivePredictions.seatbelt++;
+                        if (consecutivePredictions.seatbelt >= 3) {
+                            playBeep("seatbelt");  // Trigger seatbelt beep sound
+                            alertTriggered = true;
+                        }
+                    }
+                    else {
+                        consecutivePredictions.seatbelt = 0;  // Reset counter if label is different
+                    }
+                }
+
+                if (label === "sleeping") {
+                    if (confidence > 0.7) {
+                        consecutivePredictions.sleeping++;
+                        if (consecutivePredictions.sleeping >= 2) {
+                            playBeep("sleeping");  // Trigger sleeping beep sound
+                            alertTriggered = true;
+                        }
+                    }
+                    else {
+                        consecutivePredictions.sleeping = 0;
+                    }
+                }
+
+                if (label === "yawning") {
+                    if (confidence > 0.7) {
+                        consecutivePredictions.yawning++;
+                        if (consecutivePredictions.yawning >= 1) {
+                            playBeep("yawning");  // Trigger yawning beep sound
+                            alertTriggered = true;
+                        }
+                    }
+                    else {
+                        consecutivePredictions.yawning = 0;
+                    }
+                }
+
+                if (label === "cigarette") {
+                    if (confidence > 0.7) {
+                        consecutivePredictions.cigarette++;
+                        if (consecutivePredictions.cigarette >= 1) {
+                            playBeep("cigarette");  // Trigger cigarette beep sound
+                            alertTriggered = true;
+                        }
+                    }
+                    else {
+                        consecutivePredictions.cigarette = 0;
+                    }
+                }
+            });
+
+            document.getElementById("predictions").innerHTML = output;
+        }
+
+        // Start webcam
+        startWebcam();
+
+        // Continuously capture frames every 1 second
+        setInterval(captureAndDetect, 1000);
+    </script>
+</body>
+
+</html>
